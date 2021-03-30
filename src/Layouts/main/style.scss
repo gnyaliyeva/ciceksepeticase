@@ -1,5 +1,7 @@
 .top-bar-wrapper,
 .blue-bar-wrapper,
+.card-bar-container,
+.market-content-container,
 .footer-wrapper {
   padding-left: 12%;
   padding-right: 12%;
@@ -88,7 +90,7 @@
     flex-wrap: wrap;
     margin-top: 109px;
     margin-bottom: 96px;
-    .footer__icons img {
+    .footer__icons .icon {
       margin-right: 30px;
     }
     .border-right {

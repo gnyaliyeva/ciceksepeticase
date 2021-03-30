@@ -1,0 +1,34 @@
+button {
+  border: 1px solid #fff;
+  background-color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  &.button-primary {
+    border-radius: 15px!important;
+    height: 30px;
+  }
+  &.button-outline-primary {
+    border-radius: 15px!important;
+    border: 1px solid #044DC3;
+    height: 40px;
+    color: #044DC3;
+  }
+  &.button-secondary {
+    border-radius: 10px!important;
+    background-color: #044DC3;
+    height: 50px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 800;
+    width: 195px;
+  }
+  &.button-secondary-primary {
+    border-radius: 10px!important;
+    border: 1px solid #E2E7E9;
+    height: 50px;
+    color: #707070;
+    font-size: 18px;
+    font-weight: 800;
+    width: 195px;
+  }
+}

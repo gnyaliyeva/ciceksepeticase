@@ -2,14 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { icons } from './icons';
 
-import './style.scss';
-
 const Icon = props => {
   const { color } = props;
 
   return (
     <svg
       {...props}
+      className="icon"
       fill={color}
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"

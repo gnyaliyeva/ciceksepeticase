@@ -6,11 +6,8 @@ import footerImg1 from "../../static/footer-img1.png";
 import qrCode from "../../static/qrcode.png";
 import AppStore from "../../static/appstore.svg";
 import PlayStore from "../../static/playstore.svg";
-import Facebook from "../../static/facebook.svg";
-import Twitter from "../../static/twitter.svg";
-import Instagram from "../../static/instagram.svg";
-import Orange from "../../static/orange.svg";
-import Youtube from "../../static/youtube.svg";
+
+import Icon from "../../components/Icon";
 
 import { footerMenu } from "../footerMenu";
 
@@ -49,19 +46,19 @@ const Footer = () => {
             </div>
             <div className="footer-menu-row footer__icons">
               <Link to="/">
-                <img src={Facebook} alt="facebook" />
+                <Icon name="facebook" color="#4172b8" width={28} />
               </Link>
               <Link to="/">
-                <img src={Twitter} alt="twitter" />
+                <Icon name="twitter" color="#1da1f2" width={28} />
               </Link>
               <Link to="/">
-                <img src={Instagram} alt="instagram" />
+                <Icon name="instagram" color="#e4405f" width={28} />
               </Link>
               <Link to="/">
-                <img src={Youtube} alt="youtube" />
+                <Icon name="youtube" color="#f00" width={28} />
               </Link>
               <Link to="/">
-                <img src={Orange} alt="orange" />
+                <Icon name="social" color="#e37c33" width={28} />
               </Link>
             </div>
             <div className="footer-menu-row">
@@ -110,7 +107,9 @@ const Footer = () => {
           </span>
         </div>
       </div>
-      <div className="footer-bottom-bar">Copyright © 2019 Çiçek Sepeti İnternet Hizmetleri A.Ş</div>
+      <div className="footer-bottom-bar">
+        Copyright © 2019 Çiçek Sepeti İnternet Hizmetleri A.Ş
+      </div>
     </div>
   );
 };
