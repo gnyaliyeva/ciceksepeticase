@@ -72,14 +72,14 @@ const Footer = () => {
           </div>
           <div className="col-lg-8 col-md-6">
             <div className="row">
-              {footerMenu.map((menuItem) => (
-                <div className="col-lg-3 col-md-6 col-sm-6">
+              {footerMenu.map((menuItem, idx) => (
+                <div key={`menu-item_${idx.toString()}`} className="col-lg-3 col-md-6 col-sm-6">
                   <ul>
                     <li className="menu-header">
                       <Link to={menuItem.href}>{menuItem.name}</Link>
                     </li>
-                    {menuItem.subMenu.map(({ href, name }) => (
-                      <li>
+                    {menuItem.subMenu.map(({ key, href, name }) => (
+                      <li key={`${idx.toString()}_${key}`}>
                         <Link to={href}>{name}</Link>
                       </li>
                     ))}

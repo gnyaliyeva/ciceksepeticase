@@ -15,6 +15,8 @@
     "react-helmet": "^6.1.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "react-search-field": "^1.2.0",
+    "react-tooltip": "^4.2.17",
     "reset-css": "^5.0.1",
     "web-vitals": "^1.1.1"
   },

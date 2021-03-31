@@ -9,22 +9,26 @@ const Button = (props) => {
   const {
     children,
     className,
-    block,
     primary,
     outlinePrimary,
     secondary,
     outlineSecondary,
-    disabled,
   } = props;
-  const buttonProps = omit(props, "children", "className");
+  const buttonProps = omit(
+    props,
+    'children',
+    'primary',
+    'outlinePrimary',
+    'secondary',
+    'outlineSecondary',
+  );;
   const buttonClasses = classNames("button", className, {
-    "button-block": block,
     "button-primary": primary,
     "button-outline-primary": outlinePrimary,
     "button-secondary": secondary,
     "button-secondary-primary": outlineSecondary,
-    "button-disabled": disabled,
   });
+
   return (
     <button {...buttonProps} className={buttonClasses}>
       {children}
@@ -34,11 +38,10 @@ const Button = (props) => {
 
 Button.propTypes = {
   children: PropTypes.node,
-  block: PropTypes.bool,
   primary: PropTypes.bool,
+  secondary: PropTypes.bool,
   outlinePrimary: PropTypes.bool,
-  transparent: PropTypes.bool,
-  disabled: PropTypes.bool,
+  outlineSecondary: PropTypes.bool,
   className: PropTypes.string,
 };
 

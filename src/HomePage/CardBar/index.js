@@ -27,8 +27,8 @@ const CardBar = () => {
   return (
     <div className="card-bar-container">
       <div className="row">
-        {cardList.map((card) => (
-          <div className="col-md-4">
+        {cardList.map((card, idx) => (
+          <div key={`card_${idx}`} className="col-md-4">
             <Card {...card} />
           </div>
         ))}

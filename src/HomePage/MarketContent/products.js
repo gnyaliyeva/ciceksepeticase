@@ -53,7 +53,7 @@ export const products = [
   {
     key: 6,
     category: ["life", "toy", "gift"],
-    title: "Büyük Boy Metal Osmanlı Bizans Satranç Takımı Parlak ve Cev...h",
+    title: "Büyük Boy Metal Osmanlı Bizans Satranç Takımı Parlak ve Cevceveli",
     label: "Ücretsiz Teslimat",
     price: "19,90 TL",
     img: product6,
