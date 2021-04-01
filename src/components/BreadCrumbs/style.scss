@@ -1,3 +1,17 @@
 .breadcrumbs-wrapper {
-  
+  margin-top: 15px;
+  margin-bottom: 15px;
+  .breadcrumbs-content {
+    display: flex;
+  }
+  .breadcrumb-item {
+    font-size: 13px;
+    a {
+      color: #555555;
+    }
+    &.active a {
+      color: #51B549;
+      font-weight: 800;
+    }
+  }
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 
 import { routes } from "../../routes";
 
@@ -6,19 +7,15 @@ import "./style.scss";
 
 const BreadCrumbs = () => {
   return (
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-          <a href="#">Home</a>
-        </li>
-        <li class="breadcrumb-item">
-          <a href="#">Library</a>
-        </li>
-        <li class="breadcrumb-item active" aria-current="page">
-          Data
-        </li>
+    <div className="breadcrumbs-wrapper">
+      <ol className="breadcrumbs-content">
+        {routes.map((route, idx) => (
+          <li className={`breadcrumb-item ${idx === routes.length-1 ? 'active' : ''}`}>
+            <Link to={route.href}>{route.name}</Link>
+          </li>
+        ))}
       </ol>
-    </nav>
+    </div>
   );
 };
 

@@ -5,6 +5,7 @@ import ReactTooltip from "react-tooltip";
 import logo from "../../static/logo.svg";
 
 import Icon from "../../components/Icon";
+import BreadCrumbs from "../../components/BreadCrumbs";
 
 const Header = () => {
   const onChange = (e) => {
@@ -39,6 +40,7 @@ const Header = () => {
       <div className="blue-bar-wrapper">
         <h1>ÇiçekSepeti</h1>
       </div>
+      <BreadCrumbs/>
     </div>
   );
 };

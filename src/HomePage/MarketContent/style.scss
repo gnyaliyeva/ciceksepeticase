@@ -2,10 +2,10 @@
   margin-top: 10px;
   .category-list-content {
     margin-bottom: 30px;
-    .header {
+    .header .button {
       display: flex;
       align-items: center;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
     .header--title {
       color: #044dc3;
@@ -119,15 +119,6 @@
     }
     &:not(:nth-child(2n)) {
       margin-right: 15px;
-    }
-  }
-}
-
-@media (max-width: 575.98px) {
-  .market-content-container .card-container {
-    width: 100%!important;
-    &:not(:nth-child(5n)), &:not(:nth-child(3n)), &:not(:nth-child(2n)) {
-      margin-right: 0px;
     }
   }
 }

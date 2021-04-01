@@ -2,6 +2,7 @@
 .blue-bar-wrapper,
 .card-bar-container,
 .market-content-container,
+.breadcrumbs-wrapper,
 .footer-wrapper {
   padding-left: 12%;
   padding-right: 12%;
@@ -238,6 +239,22 @@
 }
 
 @media (max-width: 767.98px) {
+  .top-bar-wrapper {
+    flex-direction: column;
+    position: relative;
+  }
+  .react-search-field {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .app-logo {
+    position: absolute;
+    left: 6%;
+  }
+  .product-box {
+    position: absolute;
+    right: 6%;
+  }
   .footer-wrapper {
     padding-top: 58px;
   }

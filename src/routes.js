@@ -1,18 +1,14 @@
-export const Menu = [
+export const routes = [
   {
     href: "/",
     name: "CicekSepeti Market",
-    subMenu: [
-      {
-        href: "/",
-        name: "Istanbul",
-        subMenu: [
-          {
-            href: "/",
-            name: "CicekSepetiBreadCrumb",
-          },
-        ],
-      },
-    ],
+  },
+  {
+    href: "/",
+    name: "İstanbul",
+  },
+  {
+    href: "/",
+    name: "CiceksepetiBreadCrumb",
   },
 ];
