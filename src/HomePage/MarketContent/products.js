@@ -11,15 +11,15 @@ import product10 from "../../static/product10.png";
 
 export const products = [
   {
-    key: 1,
-    categoryTypes: ["electronic", "gift", "accessory"],
+    id: 1,
+    category: ["electronic", "gift", "accessory"],
     title: "Z6 Akıllı Saat Kameralı Konuşma Garantili Sim Kartlı Bluetooth",
     label: "Ücretsiz Teslimat",
     price: "399,90 TL",
     img: product1,
   },
   {
-    key: 2,
+    id: 2,
     category: ["gift", "parfume", "personal_care"],
     title: "Calvin Klein Euphoria EDP 100 ml Kadın Parfüm",
     label: null,
@@ -27,7 +27,7 @@ export const products = [
     img: product2,
   },
   {
-    key: 3,
+    id: 3,
     category: ["life", "flower", "gift"],
     title: "Gold Çizgili Vazoda 2 Dal Orkide Çiçeği",
     label: "Ücretsiz Teslimat",
@@ -35,7 +35,7 @@ export const products = [
     img: product3,
   },
   {
-    key: 4,
+    id: 4,
     category: ["gift", "accessory"],
     title: "925 Ayar Gümüş Çeyreklik Bileklik (Y)",
     label: null,
@@ -43,7 +43,7 @@ export const products = [
     img: product4,
   },
   {
-    key: 5,
+    id: 5,
     category: ["spor", "gift", "accessory"],
     title: "Sailor SD-3160 Siyah Dağcı Seyahat Sırt Çantası 55 LT Outdoor-Trekking",
     label: "Ücretsiz Teslimat",
@@ -51,7 +51,7 @@ export const products = [
     img: product5,
   },
   {
-    key: 6,
+    id: 6,
     category: ["life", "toy", "gift"],
     title: "Büyük Boy Metal Osmanlı Bizans Satranç Takımı Parlak ve Cevceveli",
     label: "Ücretsiz Teslimat",
@@ -59,7 +59,7 @@ export const products = [
     img: product6,
   },
   {
-    key: 7,
+    id: 7,
     category: ["life", "toy", "gift"],
     title: "130 Cm Papyonlu Büyük Ayıcı (%100 Yerli)",
     label: "Ücretsiz Teslimat",
@@ -67,7 +67,7 @@ export const products = [
     img: product7,
   },
   {
-    key: 8,
+    id: 8,
     category: ["gift", "accessory"],
     title: "925 Ayar Gümüş Dualı İsimli Nazar İgnesi",
     label: "Ücretsiz Teslimat",
@@ -75,7 +75,7 @@ export const products = [
     img: product8,
   },
   {
-    key: 9,
+    id: 9,
     category: ["gift"],
     title: "Özel Tatlar Çikolata Kutusu 300 gr",
     label: "Ücretsiz Teslimat",
@@ -83,7 +83,7 @@ export const products = [
     img: product9,
   },
   {
-    key: 10,
+    id: 10,
     category: ["flower", "gift"],
     title: "Kucak Dolusu Aşk 25 Kırmızı Gül Buketi",
     label: null,
@@ -91,15 +91,15 @@ export const products = [
     img: product10,
   },
   {
-    key: 11,
-    categoryTypes: ["electronic", "gift", "accessory"],
+    id: 11,
+    category: ["electronic", "gift", "accessory"],
     title: "Z6 Akıllı Saat Kameralı Konuşma Garantili Sim Kartlı Bluetooth",
     label: "Ücretsiz Teslimat",
     price: "399,90 TL",
     img: product1,
   },
   {
-    key: 12,
+    id: 12,
     category: ["gift", "parfume", "personal_care"],
     title: "Calvin Klein Euphoria EDP 100 ml Kadın Parfüm",
     label: null,
@@ -107,7 +107,7 @@ export const products = [
     img: product2,
   },
   {
-    key: 13,
+    id: 13,
     category: ["life", "flower", "gift"],
     title: "Gold Çizgili Vazoda 2 Dal Orkide Çiçeği",
     label: "Ücretsiz Teslimat",
@@ -115,7 +115,7 @@ export const products = [
     img: product3,
   },
   {
-    key: 14,
+    id: 14,
     category: ["gift", "accessory"],
     title: "925 Ayar Gümüş Çeyreklik Bileklik (Y)",
     label: null,
@@ -123,7 +123,7 @@ export const products = [
     img: product4,
   },
   {
-    key: 15,
+    id: 15,
     category: ["spor", "gift", "accessory"],
     title: "Sailor SD-3160 Siyah Dağcı Seyahat Sırt Çantası 55 LT Outdoor-Trekking",
     label: "Ücretsiz Teslimat",
@@ -131,7 +131,7 @@ export const products = [
     img: product5,
   },
   {
-    key: 16,
+    id: 16,
     category: ["life", "toy", "gift"],
     title: "Büyük Boy Metal Osmanlı Bizans Satranç Takımı Parlak ve Cevceveli",
     label: "Ücretsiz Teslimat",
@@ -139,7 +139,7 @@ export const products = [
     img: product6,
   },
   {
-    key: 17,
+    id: 17,
     category: ["life", "toy", "gift"],
     title: "130 Cm Papyonlu Büyük Ayıcı (%100 Yerli)",
     label: "Ücretsiz Teslimat",
@@ -147,7 +147,7 @@ export const products = [
     img: product7,
   },
   {
-    key: 18,
+    id: 18,
     category: ["gift", "accessory"],
     title: "925 Ayar Gümüş Dualı İsimli Nazar İgnesi",
     label: "Ücretsiz Teslimat",
@@ -155,7 +155,7 @@ export const products = [
     img: product8,
   },
   {
-    key: 19,
+    id: 19,
     category: ["gift"],
     title: "Özel Tatlar Çikolata Kutusu 300 gr",
     label: "Ücretsiz Teslimat",
@@ -163,7 +163,7 @@ export const products = [
     img: product9,
   },
   {
-    key: 20,
+    id: 20,
     category: ["flower", "gift"],
     title: "Kucak Dolusu Aşk 25 Kırmızı Gül Buketi",
     label: null,
@@ -171,15 +171,15 @@ export const products = [
     img: product10,
   },
   {
-    key: 21,
-    categoryTypes: ["electronic", "gift", "accessory"],
+    id: 21,
+    category: ["electronic", "gift", "accessory"],
     title: "Z6 Akıllı Saat Kameralı Konuşma Garantili Sim Kartlı Bluetooth",
     label: "Ücretsiz Teslimat",
     price: "399,90 TL",
     img: product1,
   },
   {
-    key: 22,
+    id: 22,
     category: ["gift", "parfume", "personal_care"],
     title: "Calvin Klein Euphoria EDP 100 ml Kadın Parfüm",
     label: null,
@@ -187,7 +187,7 @@ export const products = [
     img: product2,
   },
   {
-    key: 23,
+    id: 23,
     category: ["life", "flower", "gift"],
     title: "Gold Çizgili Vazoda 2 Dal Orkide Çiçeği",
     label: "Ücretsiz Teslimat",
@@ -195,7 +195,7 @@ export const products = [
     img: product3,
   },
   {
-    key: 24,
+    id: 24,
     category: ["gift", "accessory"],
     title: "925 Ayar Gümüş Çeyreklik Bileklik (Y)",
     label: null,
@@ -203,7 +203,7 @@ export const products = [
     img: product4,
   },
   {
-    key: 25,
+    id: 25,
     category: ["spor", "gift", "accessory"],
     title: "Sailor SD-3160 Siyah Dağcı Seyahat Sırt Çantası 55 LT Outdoor-Trekking",
     label: "Ücretsiz Teslimat",
@@ -211,7 +211,7 @@ export const products = [
     img: product5,
   },
   {
-    key: 26,
+    id: 26,
     category: ["life", "toy", "gift"],
     title: "Büyük Boy Metal Osmanlı Bizans Satranç Takımı Parlak ve Cevceveli",
     label: "Ücretsiz Teslimat",
@@ -219,7 +219,7 @@ export const products = [
     img: product6,
   },
   {
-    key: 27,
+    id: 27,
     category: ["life", "toy", "gift"],
     title: "130 Cm Papyonlu Büyük Ayıcı (%100 Yerli)",
     label: "Ücretsiz Teslimat",
@@ -227,7 +227,7 @@ export const products = [
     img: product7,
   },
   {
-    key: 28,
+    id: 28,
     category: ["gift", "accessory"],
     title: "925 Ayar Gümüş Dualı İsimli Nazar İgnesi",
     label: "Ücretsiz Teslimat",
@@ -235,7 +235,7 @@ export const products = [
     img: product8,
   },
   {
-    key: 29,
+    id: 29,
     category: ["gift"],
     title: "Özel Tatlar Çikolata Kutusu 300 gr",
     label: "Ücretsiz Teslimat",
@@ -243,7 +243,7 @@ export const products = [
     img: product9,
   },
   {
-    key: 30,
+    id: 30,
     category: ["flower", "gift"],
     title: "Kucak Dolusu Aşk 25 Kırmızı Gül Buketi",
     label: null,

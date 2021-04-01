@@ -1,25 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
+import PropTypes from "prop-types";
 import SearchField from "react-search-field";
 import ReactTooltip from "react-tooltip";
 
 import logo from "../../static/logo.svg";
 
+import history from "../../history";
+
+import Button from "../../components/Button";
 import Icon from "../../components/Icon";
 import BreadCrumbs from "../../components/BreadCrumbs";
 
-const Header = () => {
-  const onChange = (e) => {
-    console.log(e);
-  };
+const Header = ({ totalCount }) => {
+  const { pathname } = history.location;
+  const [search, setSearch] = useState(null);
+
   return (
     <div className="header-wrapper">
       <div className="top-bar-wrapper">
         <img src={logo} alt="cicek-sepeti-logo" className="app-logo" />
-        <SearchField placeholder="Search..." onChange={onChange} />
+        <div className="search-box-wrapper">
+          <SearchField placeholder="Search..." onChange={setSearch} />
+          <Button
+            className="button-search"
+            onClick={() => history.push(`${pathname}?q=${search}`)}
+          >
+            Ara
+          </Button>
+        </div>
         <div className="product-box" data-tip data-for="product-box">
           <Icon name="trolley" width={16} color="#fff" />
           <span className="title-text">Sepetim</span>
-          <span className="product-count">0</span>
+          <span className="product-count">{totalCount}</span>
         </div>
         <ReactTooltip
           id="product-box"
@@ -40,9 +52,13 @@ const Header = () => {
       <div className="blue-bar-wrapper">
         <h1>ÇiçekSepeti</h1>
       </div>
-      <BreadCrumbs/>
+      <BreadCrumbs />
     </div>
   );
+};
+
+Header.propTypes = {
+  totalCount: PropTypes.number,
 };
 
 export default Header;

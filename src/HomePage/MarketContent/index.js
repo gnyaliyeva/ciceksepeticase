@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import _ from "lodash";
 
 import Button from "../../components/Button";
 import Icon from "../../components/Icon";
 
-import Card from "./card";
+import ProductContent from "./ProductContent";
 import { categories } from "./categories";
 import { products } from "./products";
 
@@ -11,6 +12,21 @@ import "./style.scss";
 
 const MarketContent = () => {
   const [showNavMenu, setShowNavMenu] = useState(false);
+  const [category, setCategory] = useState(null);
+  const [productList, setProductList] = useState(products);
+
+  useEffect(() => {
+    let list = products;
+    if (category) {
+      list = _.filter(products, (product) =>
+        _.includes(product.category, category)
+      );
+    } else {
+      list = products;
+    }
+    setProductList(list);
+  }, [category]);
+
   return (
     <div className="market-content-container">
       <div className="category-list-content">
@@ -21,33 +37,34 @@ const MarketContent = () => {
           </Button>
         </div>
         <div className="category-list-content__row category-wrapper d-none d-md-flex">
-          <Button secondary>Tüm Kategoriler</Button>
+          <Button secondary onClick={() => setCategory(null)}>
+            Tüm Kategoriler
+          </Button>
           {categories.map((category) => (
-            <Button outlineSecondary key={category.title}>
+            <Button
+              outlineSecondary
+              key={category.title}
+              onClick={() => setCategory(category.scope)}
+            >
               {category.title}
             </Button>
           ))}
         </div>
         {showNavMenu && (
-          <div className="category-list-content__row category-wrapper">
-            <Button>Tüm Kategoriler</Button>
+          <div className="category-list-content__row category-wrapper d-md-none">
+            <Button onClick={() => setCategory(null)}>Tüm Kategoriler</Button>
             {categories.map((category) => (
-              <Button key={category.title}>{category.title}</Button>
+              <Button
+                key={category.title}
+                onClick={() => setCategory(category.scope)}
+              >
+                {category.title}
+              </Button>
             ))}
           </div>
         )}
       </div>
-      <div className="product-list-content">
-        <div className="product-list-content__row header">
-          <Icon name="leaf" color="#51B549" width={17} />
-          <span className="header--title">Tüm Kategoriler</span>
-        </div>
-        <div className="product-list-content__row">
-          {products.map((product) => (
-            <Card {...product} key={product.key} />
-          ))}
-        </div>
-      </div>
+      <ProductContent products={productList} />
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import classNames from "classnames";
 
 import Button from "../../components/Button";
@@ -17,6 +18,13 @@ const Card = ({ imgName, buttonTxt, text, backGround }) => {
       </div>
     </div>
   );
+};
+
+Card.propTypes = {
+  imgName: PropTypes.string,
+  buttonTxt: PropTypes.string,
+  text: PropTypes.string,
+  backGround: PropTypes.string,
 };
 
 export default Card;

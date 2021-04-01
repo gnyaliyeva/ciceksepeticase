@@ -13,6 +13,7 @@ const Button = (props) => {
     outlinePrimary,
     secondary,
     outlineSecondary,
+    onClick
   } = props;
   const buttonProps = omit(
     props,
@@ -30,7 +31,7 @@ const Button = (props) => {
   });
 
   return (
-    <button {...buttonProps} className={buttonClasses}>
+    <button {...buttonProps} className={buttonClasses} onClick={onClick}>
       {children}
     </button>
   );
@@ -43,6 +44,7 @@ Button.propTypes = {
   outlinePrimary: PropTypes.bool,
   outlineSecondary: PropTypes.bool,
   className: PropTypes.string,
+  onClick: PropTypes.func
 };
 
 export default Button;
