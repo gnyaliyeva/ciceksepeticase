@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router } from "react-router-dom";
-import HomePage from "./HomePage";
 import MainLayout from "./Layouts/main";
 import reportWebVitals from "./reportWebVitals";
 
@@ -9,7 +8,7 @@ import "./app.scss";
 
 ReactDOM.render(
   <Router>
-    <MainLayout component={<HomePage />} />
+    <MainLayout />
   </Router>,
   document.getElementById("root")
 );

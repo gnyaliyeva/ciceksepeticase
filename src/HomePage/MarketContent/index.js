@@ -1,31 +1,15 @@
 import React, { useEffect, useState } from "react";
-import _ from "lodash";
 
 import Button from "../../components/Button";
 import Icon from "../../components/Icon";
 
 import ProductContent from "./ProductContent";
 import { categories } from "./categories";
-import { products } from "./products";
 
 import "./style.scss";
 
-const MarketContent = () => {
+const MarketContent = ({ productList, setCategory }) => {
   const [showNavMenu, setShowNavMenu] = useState(false);
-  const [category, setCategory] = useState(null);
-  const [productList, setProductList] = useState(products);
-
-  useEffect(() => {
-    let list = products;
-    if (category) {
-      list = _.filter(products, (product) =>
-        _.includes(product.category, category)
-      );
-    } else {
-      list = products;
-    }
-    setProductList(list);
-  }, [category]);
 
   return (
     <div className="market-content-container">
@@ -44,7 +28,7 @@ const MarketContent = () => {
             <Button
               outlineSecondary
               key={category.title}
-              onClick={() => setCategory(category.scope)}
+              onClick={({ scope }) => setCategory(scope)}
             >
               {category.title}
             </Button>
@@ -56,7 +40,7 @@ const MarketContent = () => {
             {categories.map((category) => (
               <Button
                 key={category.title}
-                onClick={() => setCategory(category.scope)}
+                onClick={({ scope }) => setCategory(scope)}
               >
                 {category.title}
               </Button>

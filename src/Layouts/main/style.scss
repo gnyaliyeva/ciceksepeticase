@@ -40,26 +40,16 @@
     color: #fff;
     font-weight: 800;
     border-radius: 15px;
-    height: 30px;
+    height: 32px;
     width: 56px;
     right: 2px;
     top: 2px;
   }
 }
 
-.react-search-field {
-  flex-direction: row-reverse;
+.form-control {
   background-color: #f7f7f7;
-  border-radius: 28px;
-  width: 100%;
-  .react-search-field-button {
-    background-color: #f7f7f7 !important;
-    border-radius: 28px;
-  }
-  input {
-    background-color: #f7f7f7;
-    border-radius: 28px;
-  }
+  border-radius: 28px!important;
 }
 
 .product-box {

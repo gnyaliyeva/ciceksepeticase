@@ -1,32 +1,36 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import SearchField from "react-search-field";
+import { AsyncTypeahead } from "react-bootstrap-typeahead";
 import ReactTooltip from "react-tooltip";
 
 import logo from "../../static/logo.svg";
-
-import history from "../../history";
 
 import Button from "../../components/Button";
 import Icon from "../../components/Icon";
 import BreadCrumbs from "../../components/BreadCrumbs";
 
-const Header = ({ totalCount }) => {
-  const { pathname } = history.location;
-  const [search, setSearch] = useState(null);
+import { products } from "../../HomePage/MarketContent/products";
 
+const Header = ({ totalCount, setFilter }) => {
   return (
     <div className="header-wrapper">
       <div className="top-bar-wrapper">
         <img src={logo} alt="cicek-sepeti-logo" className="app-logo" />
         <div className="search-box-wrapper">
-          <SearchField placeholder="Search..." onChange={setSearch} />
-          <Button
-            className="button-search"
-            onClick={() => history.push(`${pathname}?q=${search}`)}
-          >
-            Ara
-          </Button>
+          <AsyncTypeahead
+            isLoading={false}
+            labelKey="label"
+            minLength={3}
+            id="search"
+            onSearch={value => setFilter(null, value)}
+            options={products.map((product) => ({
+              label: product.title,
+              value: product.title,
+            }))}
+            placeholder="Ürün Ara"
+            renderMenuItemChildren={(option) => <p>{option.value}</p>}
+          />
+          <Button className="button-search">Ara</Button>
         </div>
         <div className="product-box" data-tip data-for="product-box">
           <Icon name="trolley" width={16} color="#fff" />
