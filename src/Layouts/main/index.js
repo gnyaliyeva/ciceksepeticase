@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 
+import { products } from "../../HomePage/MarketContent/products";
+
 import HomePage from "../../HomePage";
 import { getProductList } from "../../tools";
 
@@ -7,7 +9,6 @@ import Header from "./header";
 import Footer from "./footer";
 
 import "./style.scss";
-import { products } from "../../HomePage/MarketContent/products";
 
 const MainLayout = () => {
   const [category, setCategory] = useState(null);
@@ -33,14 +34,14 @@ const MainLayout = () => {
   };
 
   useEffect(() => {
-    setProductList(getProductList(category, search));
-  }, [category, search]);
-
-  useEffect(() => {
     setSelectedProducts(
       products.map((product) => ({ id: product.id, count: 0, fee: 0 }))
     );
   }, []);
+
+  useEffect(() => {
+    setProductList(getProductList(category, search));
+  }, [category, search]);
 
   useEffect(() => {
     let amount = 0;

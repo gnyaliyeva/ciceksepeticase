@@ -4,7 +4,7 @@ This project was created with React JS, Bootstrap and Sass.
 
 ### `dependencies`
 
-node v10+
+node v10+ &&
 npm v6+
 
 
@@ -12,7 +12,7 @@ npm v6+
 
 Clone the repository and move the branch main. Then;
 
-npm install
+npm install &&
 npm run start
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.

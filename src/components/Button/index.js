@@ -13,16 +13,16 @@ const Button = (props) => {
     outlinePrimary,
     secondary,
     outlineSecondary,
-    onClick
+    onClick,
   } = props;
   const buttonProps = omit(
     props,
-    'children',
-    'primary',
-    'outlinePrimary',
-    'secondary',
-    'outlineSecondary',
-  );;
+    "children",
+    "primary",
+    "outlinePrimary",
+    "secondary",
+    "outlineSecondary"
+  );
   const buttonClasses = classNames("button", className, {
     "button-primary": primary,
     "button-outline-primary": outlinePrimary,
@@ -44,7 +44,7 @@ Button.propTypes = {
   outlinePrimary: PropTypes.bool,
   outlineSecondary: PropTypes.bool,
   className: PropTypes.string,
-  onClick: PropTypes.func
+  onClick: PropTypes.func,
 };
 
 export default Button;

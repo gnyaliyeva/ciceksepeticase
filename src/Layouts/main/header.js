@@ -59,7 +59,9 @@ const Header = ({ handleFilter, amount, cost }) => {
             <Icon name="flash" color="#FFCE00" width={13} />
             {cost < 500 ? (
               <>
-                <span className="color-yellow">{(500 - cost).toFixed(2)} TL</span>
+                <span className="color-yellow">
+                  {(500 - cost).toFixed(2)} TL
+                </span>
                 ürün daha ekleyin kargo bedava
               </>
             ) : (

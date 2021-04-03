@@ -3,7 +3,9 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 
 import Button from "../../components/Button";
+
 import { images } from "./images";
+
 import "./style.scss";
 
 const Card = ({ imgName, buttonTxt, text, backGround }) => {

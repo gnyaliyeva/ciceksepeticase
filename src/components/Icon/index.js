@@ -1,8 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { icons } from './icons';
+import React from "react";
+import PropTypes from "prop-types";
+import { icons } from "./icons";
 
-const Icon = props => {
+const Icon = (props) => {
   const { color } = props;
 
   return (
