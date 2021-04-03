@@ -11,7 +11,13 @@ import BreadCrumbs from "../../components/BreadCrumbs";
 
 import { products } from "../../HomePage/MarketContent/products";
 
-const Header = ({ totalCount, setFilter }) => {
+const Header = ({ handleFilter, amount, cost }) => {
+  const [search, setSearch] = useState(null);
+
+  const handleSearch = () => {
+    handleFilter(null, search);
+  };
+
   return (
     <div className="header-wrapper">
       <div className="top-bar-wrapper">
@@ -22,7 +28,8 @@ const Header = ({ totalCount, setFilter }) => {
             labelKey="label"
             minLength={3}
             id="search"
-            onSearch={value => setFilter(null, value)}
+            onSearch={setSearch}
+            onKeyDown={handleSearch}
             options={products.map((product) => ({
               label: product.title,
               value: product.title,
@@ -30,12 +37,14 @@ const Header = ({ totalCount, setFilter }) => {
             placeholder="Ürün Ara"
             renderMenuItemChildren={(option) => <p>{option.value}</p>}
           />
-          <Button className="button-search">Ara</Button>
+          <Button className="button-search" onClick={handleSearch}>
+            Ara
+          </Button>
         </div>
         <div className="product-box" data-tip data-for="product-box">
           <Icon name="trolley" width={16} color="#fff" />
           <span className="title-text">Sepetim</span>
-          <span className="product-count">{totalCount}</span>
+          <span className="product-count">{amount}</span>
         </div>
         <ReactTooltip
           id="product-box"
@@ -48,8 +57,14 @@ const Header = ({ totalCount, setFilter }) => {
         >
           <div className="product-box__tooltip--text">
             <Icon name="flash" color="#FFCE00" width={13} />
-            <span className="color-yellow">50 TL</span> ürün daha ekleyin kargo
-            bedava
+            {cost < 500 ? (
+              <>
+                <span className="color-yellow">{(500 - cost).toFixed(2)} TL</span>
+                ürün daha ekleyin kargo bedava
+              </>
+            ) : (
+              "kargo bedava"
+            )}
           </div>
         </ReactTooltip>
       </div>
@@ -62,7 +77,9 @@ const Header = ({ totalCount, setFilter }) => {
 };
 
 Header.propTypes = {
-  totalCount: PropTypes.number,
+  amount: PropTypes.number,
+  cost: PropTypes.number,
+  handleFilter: PropTypes.func,
 };
 
 export default Header;

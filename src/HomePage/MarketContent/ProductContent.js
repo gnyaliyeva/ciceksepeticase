@@ -7,7 +7,7 @@ import Card from "./card";
 
 import "./style.scss";
 
-const ProductContent = ({ products }) => {
+const ProductContent = ({ products, selectedProducts, setSelectedProducts }) => {
   return (
     <div className="product-list-content">
       <div className="product-list-content__row header">
@@ -16,7 +16,12 @@ const ProductContent = ({ products }) => {
       </div>
       <div className="product-list-content__row">
         {products.map((product) => (
-          <Card {...product} key={product.id} />
+          <Card
+            {...product}
+            key={product.id}
+            selectedProducts={selectedProducts}
+            setSelectedProducts={setSelectedProducts}
+          />
         ))}
       </div>
     </div>
@@ -25,6 +30,8 @@ const ProductContent = ({ products }) => {
 
 ProductContent.propTypes = {
   products: PropTypes.array,
+  selectedProducts: PropTypes.array,
+  setSelectedProducts: PropTypes.func,
 };
 
 export default ProductContent;

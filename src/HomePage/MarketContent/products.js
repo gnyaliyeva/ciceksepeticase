@@ -15,7 +15,7 @@ export const products = [
     category: ["electronic", "gift", "accessory"],
     title: "Z6 Akıllı Saat Kameralı Konuşma Garantili Sim Kartlı Bluetooth",
     label: "Ücretsiz Teslimat",
-    price: "399,90 TL",
+    price: 399.90,
     img: product1,
   },
   {
@@ -23,7 +23,7 @@ export const products = [
     category: ["gift", "parfume", "personal_care"],
     title: "Calvin Klein Euphoria EDP 100 ml Kadın Parfüm",
     label: null,
-    price: "145,61 TL",
+    price: 145.61,
     img: product2,
   },
   {
@@ -31,7 +31,7 @@ export const products = [
     category: ["life", "flower", "gift"],
     title: "Gold Çizgili Vazoda 2 Dal Orkide Çiçeği",
     label: "Ücretsiz Teslimat",
-    price: "249,90 TL",
+    price: 249.90,
     img: product3,
   },
   {
@@ -39,7 +39,7 @@ export const products = [
     category: ["gift", "accessory"],
     title: "925 Ayar Gümüş Çeyreklik Bileklik (Y)",
     label: null,
-    price: "329,90 TL",
+    price: 329.90,
     img: product4,
   },
   {
@@ -47,7 +47,7 @@ export const products = [
     category: ["spor", "gift", "accessory"],
     title: "Sailor SD-3160 Siyah Dağcı Seyahat Sırt Çantası 55 LT Outdoor-Trekking",
     label: "Ücretsiz Teslimat",
-    price: "499,90 TL",
+    price: 499.90,
     img: product5,
   },
   {
@@ -55,7 +55,7 @@ export const products = [
     category: ["life", "toy", "gift"],
     title: "Büyük Boy Metal Osmanlı Bizans Satranç Takımı Parlak ve Cevceveli",
     label: "Ücretsiz Teslimat",
-    price: "19,90 TL",
+    price: 19.90,
     img: product6,
   },
   {
@@ -63,7 +63,7 @@ export const products = [
     category: ["life", "toy", "gift"],
     title: "130 Cm Papyonlu Büyük Ayıcı (%100 Yerli)",
     label: "Ücretsiz Teslimat",
-    price: "89,90 TL",
+    price: 89.90,
     img: product7,
   },
   {
@@ -71,7 +71,7 @@ export const products = [
     category: ["gift", "accessory"],
     title: "925 Ayar Gümüş Dualı İsimli Nazar İgnesi",
     label: "Ücretsiz Teslimat",
-    price: "29,90 TL",
+    price: 29.90,
     img: product8,
   },
   {
@@ -79,7 +79,7 @@ export const products = [
     category: ["gift"],
     title: "Özel Tatlar Çikolata Kutusu 300 gr",
     label: "Ücretsiz Teslimat",
-    price: "59,90 TL",
+    price: 59.90,
     img: product9,
   },
   {
@@ -87,7 +87,7 @@ export const products = [
     category: ["flower", "gift"],
     title: "Kucak Dolusu Aşk 25 Kırmızı Gül Buketi",
     label: null,
-    price: "199,90 TL",
+    price: 199.90,
     img: product10,
   },
   {
@@ -95,7 +95,7 @@ export const products = [
     category: ["electronic", "gift", "accessory"],
     title: "Z6 Akıllı Saat Kameralı Konuşma Garantili Sim Kartlı Bluetooth",
     label: "Ücretsiz Teslimat",
-    price: "399,90 TL",
+    price: 399.90,
     img: product1,
   },
   {
@@ -103,7 +103,7 @@ export const products = [
     category: ["gift", "parfume", "personal_care"],
     title: "Calvin Klein Euphoria EDP 100 ml Kadın Parfüm",
     label: null,
-    price: "145,61 TL",
+    price: 145.61,
     img: product2,
   },
   {
@@ -111,7 +111,7 @@ export const products = [
     category: ["life", "flower", "gift"],
     title: "Gold Çizgili Vazoda 2 Dal Orkide Çiçeği",
     label: "Ücretsiz Teslimat",
-    price: "249,90 TL",
+    price: 249.90,
     img: product3,
   },
   {
@@ -119,7 +119,7 @@ export const products = [
     category: ["gift", "accessory"],
     title: "925 Ayar Gümüş Çeyreklik Bileklik (Y)",
     label: null,
-    price: "329,90 TL",
+    price: 329.90,
     img: product4,
   },
   {
@@ -127,7 +127,7 @@ export const products = [
     category: ["spor", "gift", "accessory"],
     title: "Sailor SD-3160 Siyah Dağcı Seyahat Sırt Çantası 55 LT Outdoor-Trekking",
     label: "Ücretsiz Teslimat",
-    price: "499,90 TL",
+    price: 499.90,
     img: product5,
   },
   {
@@ -135,7 +135,7 @@ export const products = [
     category: ["life", "toy", "gift"],
     title: "Büyük Boy Metal Osmanlı Bizans Satranç Takımı Parlak ve Cevceveli",
     label: "Ücretsiz Teslimat",
-    price: "19,90 TL",
+    price: 19.90,
     img: product6,
   },
   {
@@ -143,7 +143,7 @@ export const products = [
     category: ["life", "toy", "gift"],
     title: "130 Cm Papyonlu Büyük Ayıcı (%100 Yerli)",
     label: "Ücretsiz Teslimat",
-    price: "89,90 TL",
+    price: 89.90,
     img: product7,
   },
   {
@@ -151,7 +151,7 @@ export const products = [
     category: ["gift", "accessory"],
     title: "925 Ayar Gümüş Dualı İsimli Nazar İgnesi",
     label: "Ücretsiz Teslimat",
-    price: "29,90 TL",
+    price: 29.90,
     img: product8,
   },
   {
@@ -159,7 +159,7 @@ export const products = [
     category: ["gift"],
     title: "Özel Tatlar Çikolata Kutusu 300 gr",
     label: "Ücretsiz Teslimat",
-    price: "59,90 TL",
+    price: 59.90,
     img: product9,
   },
   {
@@ -167,7 +167,7 @@ export const products = [
     category: ["flower", "gift"],
     title: "Kucak Dolusu Aşk 25 Kırmızı Gül Buketi",
     label: null,
-    price: "199,90 TL",
+    price: 199.90,
     img: product10,
   },
   {
@@ -175,7 +175,7 @@ export const products = [
     category: ["electronic", "gift", "accessory"],
     title: "Z6 Akıllı Saat Kameralı Konuşma Garantili Sim Kartlı Bluetooth",
     label: "Ücretsiz Teslimat",
-    price: "399,90 TL",
+    price: 399.90,
     img: product1,
   },
   {
@@ -183,7 +183,7 @@ export const products = [
     category: ["gift", "parfume", "personal_care"],
     title: "Calvin Klein Euphoria EDP 100 ml Kadın Parfüm",
     label: null,
-    price: "145,61 TL",
+    price: 145.61,
     img: product2,
   },
   {
@@ -191,7 +191,7 @@ export const products = [
     category: ["life", "flower", "gift"],
     title: "Gold Çizgili Vazoda 2 Dal Orkide Çiçeği",
     label: "Ücretsiz Teslimat",
-    price: "249,90 TL",
+    price: 249.90,
     img: product3,
   },
   {
@@ -199,7 +199,7 @@ export const products = [
     category: ["gift", "accessory"],
     title: "925 Ayar Gümüş Çeyreklik Bileklik (Y)",
     label: null,
-    price: "329,90 TL",
+    price: 329.90,
     img: product4,
   },
   {
@@ -207,7 +207,7 @@ export const products = [
     category: ["spor", "gift", "accessory"],
     title: "Sailor SD-3160 Siyah Dağcı Seyahat Sırt Çantası 55 LT Outdoor-Trekking",
     label: "Ücretsiz Teslimat",
-    price: "499,90 TL",
+    price: 499.90,
     img: product5,
   },
   {
@@ -215,7 +215,7 @@ export const products = [
     category: ["life", "toy", "gift"],
     title: "Büyük Boy Metal Osmanlı Bizans Satranç Takımı Parlak ve Cevceveli",
     label: "Ücretsiz Teslimat",
-    price: "19,90 TL",
+    price: 19.90,
     img: product6,
   },
   {
@@ -223,7 +223,7 @@ export const products = [
     category: ["life", "toy", "gift"],
     title: "130 Cm Papyonlu Büyük Ayıcı (%100 Yerli)",
     label: "Ücretsiz Teslimat",
-    price: "89,90 TL",
+    price: 89.90,
     img: product7,
   },
   {
@@ -231,7 +231,7 @@ export const products = [
     category: ["gift", "accessory"],
     title: "925 Ayar Gümüş Dualı İsimli Nazar İgnesi",
     label: "Ücretsiz Teslimat",
-    price: "29,90 TL",
+    price: 29.90,
     img: product8,
   },
   {
@@ -239,7 +239,7 @@ export const products = [
     category: ["gift"],
     title: "Özel Tatlar Çikolata Kutusu 300 gr",
     label: "Ücretsiz Teslimat",
-    price: "59,90 TL",
+    price: 59.90,
     img: product9,
   },
   {
@@ -247,7 +247,7 @@ export const products = [
     category: ["flower", "gift"],
     title: "Kucak Dolusu Aşk 25 Kırmızı Gül Buketi",
     label: null,
-    price: "199,90 TL",
+    price: 199.90,
     img: product10,
   },
 ];

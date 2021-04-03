@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+import PropTypes from "prop-types";
 
 import Button from "../../components/Button";
 import Icon from "../../components/Icon";
@@ -8,7 +9,12 @@ import { categories } from "./categories";
 
 import "./style.scss";
 
-const MarketContent = ({ productList, setCategory }) => {
+const MarketContent = ({
+  handleFilter,
+  productList,
+  selectedProducts,
+  setSelectedProducts,
+}) => {
   const [showNavMenu, setShowNavMenu] = useState(false);
 
   return (
@@ -21,14 +27,14 @@ const MarketContent = ({ productList, setCategory }) => {
           </Button>
         </div>
         <div className="category-list-content__row category-wrapper d-none d-md-flex">
-          <Button secondary onClick={() => setCategory(null)}>
+          <Button secondary onClick={() => handleFilter(null)}>
             Tüm Kategoriler
           </Button>
           {categories.map((category) => (
             <Button
               outlineSecondary
               key={category.title}
-              onClick={({ scope }) => setCategory(scope)}
+              onClick={() => handleFilter(category.scope)}
             >
               {category.title}
             </Button>
@@ -36,11 +42,11 @@ const MarketContent = ({ productList, setCategory }) => {
         </div>
         {showNavMenu && (
           <div className="category-list-content__row category-wrapper d-md-none">
-            <Button onClick={() => setCategory(null)}>Tüm Kategoriler</Button>
+            <Button onClick={() => handleFilter(null)}>Tüm Kategoriler</Button>
             {categories.map((category) => (
               <Button
                 key={category.title}
-                onClick={({ scope }) => setCategory(scope)}
+                onClick={() => handleFilter(category.scope)}
               >
                 {category.title}
               </Button>
@@ -48,9 +54,20 @@ const MarketContent = ({ productList, setCategory }) => {
           </div>
         )}
       </div>
-      <ProductContent products={productList} />
+      <ProductContent
+        products={productList}
+        selectedProducts={selectedProducts}
+        setSelectedProducts={setSelectedProducts}
+      />
     </div>
   );
+};
+
+MarketContent.propTypes = {
+  handleFilter: PropTypes.func,
+  productList: PropTypes.array,
+  selectedProducts: PropTypes.array,
+  setSelectedProducts: PropTypes.func,
 };
 
 export default MarketContent;

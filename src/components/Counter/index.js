@@ -12,7 +12,9 @@ const Counter = ({ count, setCounter }) => {
         <i className="minus">-</i>
       </Button>
       <span className="text-count">{count}</span>
-      <Button onClick={() => setCounter(count + 1)}>
+      <Button
+        onClick={() => setCounter(count + 1)}
+      >
         <i className="plus">+</i>
       </Button>
     </div>
