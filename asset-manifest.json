@@ -1,17 +1,15 @@
 {
   "files": {
-    "main.css": "/ciceksepeticase/static/css/main.fa2fd9a5.chunk.css",
-    "main.js": "/ciceksepeticase/static/js/main.56684c6a.chunk.js",
-    "main.js.map": "/ciceksepeticase/static/js/main.56684c6a.chunk.js.map",
-    "runtime-main.js": "/ciceksepeticase/static/js/runtime-main.120cde1e.js",
-    "runtime-main.js.map": "/ciceksepeticase/static/js/runtime-main.120cde1e.js.map",
-    "static/js/2.d635fe10.chunk.js": "/ciceksepeticase/static/js/2.d635fe10.chunk.js",
-    "static/js/2.d635fe10.chunk.js.map": "/ciceksepeticase/static/js/2.d635fe10.chunk.js.map",
-    "static/js/3.784b289d.chunk.js": "/ciceksepeticase/static/js/3.784b289d.chunk.js",
-    "static/js/3.784b289d.chunk.js.map": "/ciceksepeticase/static/js/3.784b289d.chunk.js.map",
+    "main.css": "/ciceksepeticase/static/css/main.1a8125bb.chunk.css",
+    "main.js": "/ciceksepeticase/static/js/main.deacf0d2.chunk.js",
+    "main.js.map": "/ciceksepeticase/static/js/main.deacf0d2.chunk.js.map",
+    "runtime-main.js": "/ciceksepeticase/static/js/runtime-main.d326ceb9.js",
+    "runtime-main.js.map": "/ciceksepeticase/static/js/runtime-main.d326ceb9.js.map",
+    "static/js/2.1e118398.chunk.js": "/ciceksepeticase/static/js/2.1e118398.chunk.js",
+    "static/js/2.1e118398.chunk.js.map": "/ciceksepeticase/static/js/2.1e118398.chunk.js.map",
     "index.html": "/ciceksepeticase/index.html",
-    "static/css/main.fa2fd9a5.chunk.css.map": "/ciceksepeticase/static/css/main.fa2fd9a5.chunk.css.map",
-    "static/js/2.d635fe10.chunk.js.LICENSE.txt": "/ciceksepeticase/static/js/2.d635fe10.chunk.js.LICENSE.txt",
+    "static/css/main.1a8125bb.chunk.css.map": "/ciceksepeticase/static/css/main.1a8125bb.chunk.css.map",
+    "static/js/2.1e118398.chunk.js.LICENSE.txt": "/ciceksepeticase/static/js/2.1e118398.chunk.js.LICENSE.txt",
     "static/media/appstore.d58c0465.svg": "/ciceksepeticase/static/media/appstore.d58c0465.svg",
     "static/media/style.scss": "/ciceksepeticase/static/media/blue-bar.7d0f69fd.png",
     "static/media/card-img1.4751480c.png": "/ciceksepeticase/static/media/card-img1.4751480c.png",
@@ -32,9 +30,9 @@
     "static/media/product9.f9b2d205.png": "/ciceksepeticase/static/media/product9.f9b2d205.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.120cde1e.js",
-    "static/js/2.d635fe10.chunk.js",
-    "static/css/main.fa2fd9a5.chunk.css",
-    "static/js/main.56684c6a.chunk.js"
+    "static/js/runtime-main.d326ceb9.js",
+    "static/js/2.1e118398.chunk.js",
+    "static/css/main.1a8125bb.chunk.css",
+    "static/js/main.deacf0d2.chunk.js"
   ]
 }
