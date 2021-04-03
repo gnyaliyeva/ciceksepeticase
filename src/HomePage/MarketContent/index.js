@@ -46,7 +46,10 @@ const MarketContent = ({
             {categories.map((category) => (
               <Button
                 key={category.title}
-                onClick={() => handleFilter(category.scope)}
+                onClick={async () => {
+                  await handleFilter(category.scope);
+                  setShowNavMenu(!showNavMenu);
+                }}
               >
                 {category.title}
               </Button>
